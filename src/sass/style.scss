@@ -12,10 +12,11 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 	width: 100%;
+	// overflow: hidden;
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
 	position: relative;
 }
@@ -43,7 +44,7 @@ body {
 	&__bars::after,
 	&__bars::before {
 		position: absolute;
-		content: "";
+		content: '';
 		background-color: black;
 		height: 0.7rem;
 		transition: all 1s;
@@ -84,7 +85,7 @@ body {
 
 nav {
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	top: 0px;
 	background-color: white;
 	z-index: 20;
@@ -95,6 +96,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 0;
+	width: 100vw;
 	.title {
 		display: flex;
 		font-size: 3rem;
@@ -103,36 +105,40 @@ nav {
 			padding-right: 0.5rem;
 		}
 	}
-
 	.nav_items {
-		// display: none;
 		position: fixed;
 
-		display: flex;
+		display: none;
 		flex-direction: column;
 		z-index: 1000;
 		background-color: #ddddddcc;
 		top: $nav-height;
 		width: 100vw;
 		text-align: center;
+		transform: translateY(-210px);
+		z-index: -1;
 
 		.nav-link {
 			font-size: 1.6rem;
-			padding: 1.7rem 2rem;
+			padding: 1.6rem 2rem;
 
 			text-decoration: none;
 			color: black;
-			border: 1px solid rgba(0, 0, 0, 0);
+			border: 0.1rem solid rgba(0, 0, 0, 0);
 		}
 		.nav-link:hover {
-			border: 1px solid black;
+			border: 0.1rem solid black;
 			// border: black 2px solid;
 		}
 		.active {
-			border: 1px solid black;
+			border: 0.1rem solid black;
 			background-color: black;
 			color: white;
 		}
+	}
+	.show {
+		display: flex;
+		transform: translateY(0px);
 	}
 }
 
@@ -264,7 +270,7 @@ nav {
 	}
 	.cards {
 		display: flex;
-		font-family: "Raleway", sans-serif;
+		font-family: 'Raleway', sans-serif;
 		justify-content: center;
 		flex-wrap: wrap;
 		margin-bottom: 2rem;
@@ -316,7 +322,7 @@ nav {
 				font-size: 1.5rem;
 				padding: 0.5em 2em;
 				background-color: #fff;
-				font-family: "Raleway", sans-serif;
+				font-family: 'Raleway', sans-serif;
 				border: none;
 				border-radius: 0.3rem;
 				box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.5);
@@ -380,4 +386,4 @@ footer {
 	}
 }
 
-@import "./media";
+@import './media';
