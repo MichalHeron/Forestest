@@ -13,6 +13,7 @@ html {
 	scroll-behavior: smooth;
 	width: 100%;
 	// overflow: hidden;
+
 }
 
 body {
@@ -96,7 +97,8 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 0;
-	width: 100vw;
+	width: 100%;
+
 	.title {
 		display: flex;
 		font-size: 3rem;
@@ -107,16 +109,16 @@ nav {
 	}
 	.nav_items {
 		position: fixed;
-
 		display: none;
 		flex-direction: column;
+		text-align: center;
 		z-index: 1000;
 		background-color: #ddddddcc;
 		top: $nav-height;
 		width: 100vw;
-		text-align: center;
 		transform: translateY(-210px);
 		z-index: -1;
+		// transition: all 1s;
 
 		.nav-link {
 			font-size: 1.6rem;
@@ -125,6 +127,7 @@ nav {
 			text-decoration: none;
 			color: black;
 			border: 0.1rem solid rgba(0, 0, 0, 0);
+			
 		}
 		.nav-link:hover {
 			border: 0.1rem solid black;
