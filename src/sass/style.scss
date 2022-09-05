@@ -92,16 +92,20 @@ nav {
 	z-index: 20;
 }
 .navbar {
+	background-color: white;
 	display: flex;
 	height: $nav-height;
 	justify-content: space-between;
 	align-items: center;
 	font-size: 0;
 	width: 100%;
-
+z-index: 10000;
 	.title {
 		display: flex;
 		font-size: 3rem;
+		cursor: pointer;
+		text-decoration: none;
+		color: black;
 		i {
 			font-size: 3.5rem;
 			padding-right: 0.5rem;
@@ -109,7 +113,7 @@ nav {
 	}
 	.nav_items {
 		position: fixed;
-		display: none;
+		display: flex;
 		flex-direction: column;
 		text-align: center;
 		z-index: 1000;
@@ -118,15 +122,17 @@ nav {
 		width: 100vw;
 		transform: translateY(-210px);
 		z-index: -1;
-		// transition: all 1s;
-
+		transition: transform 1s;
+		
 		.nav-link {
+			// transition: all 1s;
 			font-size: 1.6rem;
 			padding: 1.6rem 2rem;
 
 			text-decoration: none;
 			color: black;
 			border: 0.1rem solid rgba(0, 0, 0, 0);
+			transition: border 0.5s;
 			
 		}
 		.nav-link:hover {
@@ -142,6 +148,8 @@ nav {
 	.show {
 		display: flex;
 		transform: translateY(0px);
+		
+
 	}
 }
 
