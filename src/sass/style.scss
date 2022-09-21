@@ -13,7 +13,6 @@ html {
 	scroll-behavior: smooth;
 	width: 100%;
 	// overflow: hidden;
-
 }
 
 body {
@@ -84,6 +83,10 @@ body {
 	font-size: 2rem;
 }
 
+.contact {
+	margin-top: 100px;
+}
+
 nav {
 	position: fixed;
 	width: 100vw;
@@ -99,7 +102,7 @@ nav {
 	align-items: center;
 	font-size: 0;
 	width: 100%;
-z-index: 10000;
+	z-index: 10000;
 	.title {
 		display: flex;
 		font-size: 3rem;
@@ -123,7 +126,7 @@ z-index: 10000;
 		transform: translateY(-210px);
 		z-index: -1;
 		transition: transform 1s;
-		
+
 		.nav-link {
 			// transition: all 1s;
 			font-size: 1.6rem;
@@ -133,7 +136,6 @@ z-index: 10000;
 			color: black;
 			border: 0.1rem solid rgba(0, 0, 0, 0);
 			transition: border 0.5s;
-			
 		}
 		.nav-link:hover {
 			border: 0.1rem solid black;
@@ -148,8 +150,6 @@ z-index: 10000;
 	.show {
 		display: flex;
 		transform: translateY(0px);
-		
-
 	}
 }
 

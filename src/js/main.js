@@ -13,10 +13,9 @@ const navActive = () => {
 	}
 	navItems.onclick = e => {
 		// console.log(e.target)
-		e.target.classList.add("active")
+		e.target.classList.add('active')
 		navItems.classList.remove('active')
 	}
-
 }
 
 burger.addEventListener('click', showNav)
@@ -26,3 +25,8 @@ for (const link of navLinks) {
 	link.addEventListener('click', navActive)
 }
 // navLinks.forEach(addEventListener('click', navActive))
+
+//trying ad listener on indow with sroll
+// window.addEventListener('mousemove', console.log(scrollY))
+// console.log(window.scrollY)
+// console.log(window)

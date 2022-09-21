@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+    <script src="https://kit.fontawesome.com/de59c53807.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <button class="burger-btn">
+    <div class="burger-btn__box">
+        <div class="burger-btn__bars"> </div>
+    </div>
+</button>
+    <nav>
+        <div class="wrapper">
+            <div class="navbar">
+                <a class="title" href="./index.html">
+                    <i class="fa-solid fa-tree title-logo"></i>
+                    <p class="title-text">Forest</p>
+                </a>
+                <div class="nav_items">
+                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link" href="#aboutUs">O nas</a>
+                    <a class="nav-link" href="./index.html#offer">Oferta</a>
+                    <a class="nav-link active" href="./contact.html">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    
+    </nav>
+
+    <form action="/mail.php" method="POST" class="contact wrapper">
+        <div class="contact__area">
+            <input type="text" id="contact-name" class="contact__input" name="contact-name" required>
+            <label for="contact-name" class="contact__label">Imię</label>
+        </div>
+        <div class="contact__area">
+            <input type="text" id="contact-mail" class="contact__input" name="contact-mail" required>
+            <label for="contact-mail" class="contact__label">Mail</label>
+        </div>
+        <div class="contact__area">
+            <input type="text" id="contact-topic" class="contact__input" name="contact-topic" required>
+            <label for="contact-topic" class="contact__label">Temat</label>
+        </div>
+        <div class="contact__area">
+            <textarea id="contact-msg" class="contact__textarea" name="contact-msg" rows="4" cols="10"
+                required></textarea>
+            <label for="contact-msg" class="contact__label">Treść wiadomości</label>
+        </div>
+
+        <button class="" type="submit" name="contact-submit">Submit</button>
+    </form>
+
+    <footer>
+    <div class="wrapper">
+        <div class="foot">
+            <div class="foot__title">
+                <i class="fa-solid fa-tree title-logo"></i>
+                <p class="title-text">Forest</p>
+            </div>
+            <div class="foot__map">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>O nas</th>
+                            <th>Nasza Firma</th>
+                            <th>Dokumenty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Historia</th>
+                            <th>Praca</th>
+                            <th>Wnioski</th>
+                        </tr>
+                        <tr>
+                            <th>Parki</th>
+                            <th>Kadry</th>
+                            <th>Rezerwacje</th>
+                        </tr>
+                        <tr>
+                            <th>Opinie</th>
+                            <th>Zarząd</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="footCopy">&copy2022 Forest Grup Company Ltd.</p>
+</footer>
+    <script src="dist/js/main.min.js"></script>
+</body>
+
+</html>
