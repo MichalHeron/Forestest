@@ -23,36 +23,61 @@
                 </a>
                 <div class="nav_items">
                     <a class="nav-link" href="./index.html">Home</a>
-                    <a class="nav-link" href="#aboutUs">O nas</a>
+                    <a class="nav-link" href="./index.html#aboutUs">O nas</a>
                     <a class="nav-link" href="./index.html#offer">Oferta</a>
                     <a class="nav-link active" href="./contact.html">Kontakt</a>
                 </div>
             </div>
         </div>
-    
+
     </nav>
 
-    <form action="/mail.php" method="POST" class="contact wrapper">
-        <div class="contact__area">
-            <input type="text" id="contact-name" class="contact__input" name="contact-name" required>
-            <label for="contact-name" class="contact__label">Imię</label>
-        </div>
-        <div class="contact__area">
-            <input type="text" id="contact-mail" class="contact__input" name="contact-mail" required>
-            <label for="contact-mail" class="contact__label">Mail</label>
-        </div>
-        <div class="contact__area">
-            <input type="text" id="contact-topic" class="contact__input" name="contact-topic" required>
-            <label for="contact-topic" class="contact__label">Temat</label>
-        </div>
-        <div class="contact__area">
-            <textarea id="contact-msg" class="contact__textarea" name="contact-msg" rows="4" cols="10"
-                required></textarea>
-            <label for="contact-msg" class="contact__label">Treść wiadomości</label>
-        </div>
 
-        <button class="" type="submit" name="contact-submit">Submit</button>
-    </form>
+
+    <section class="contact">
+        <div class="hero-img">
+            <div class="hero-shadow">
+                <div class="con-content wrapper">
+                    <h2 class="section-title section-title-contact">Napisz do nas</h2>
+
+                    <div class="con-text">
+                        <p>Nazwa firmy/imie nazwisko</p>
+                        <p>FACEBOOK</p>
+                        <p>e-mail</p>
+                    </div>
+                    <form action="/mail.php" method="POST" class="contact-form">
+                        <div class="contact__area">
+                            <input type="text" id="contact-name" class="contact__input" name="contact_name" required>
+                            <label for="contact_name" class="contact__label">Imię</label>
+                        </div>
+                        <div class="contact__area">
+                            <input type="text" id="contact-mail" class="contact__input" name="contact_mail" required>
+                            <label for="contact_mail" class="contact__label">e-mail</label>
+                        </div>
+                        <div class="contact__area">
+                            <input type="text" id="contact-topic" class="contact__input" name="contact_topic" required>
+                            <label for="contact_topic" class="contact__label">Temat</label>
+                        </div>
+                        <div class="contact__area">
+                            <textarea id="contact-msg" class="contact__textarea" name="contact_msg" rows="4" cols="10"
+                                required></textarea>
+                            <label for="contact_msg" class="contact__label">Treść</label>
+                        </div>
+
+                        <button class="btn_submit" type="submit" name="contact-submit">Wyślij</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section wrapper">
+
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20479.187611190984!2d19.857829979101574!3d50.0881881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sMcDonald&#39;s!5e0!3m2!1sen!2spl!4v1663951714223!5m2!1sen!2spl"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
     <!-- @include 'footer.kit' -->
     <script src="dist/js/main.min.js"></script>
